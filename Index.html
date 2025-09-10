@@ -161,23 +161,23 @@
       box-shadow: 0 0 20px rgba(255,255,255,0.4);
     }
     .close {
-      position: absolute;
-      top: 16px;
-      right: 24px;
-      color: #fff;
-      font-size: 36px;
-      cursor: pointer;
-      user-select: none;
-      line-height: 1;
-    }
+  position: absolute;
+  top: 16px;
+  right: 24px;
+  font-size: 40px;       /* ligeiramente maior */
+  color: #fff;           /* cruz branca */
+  background: transparent; /* sem fundo */
+  border: none;            /* sem borda */
+  outline: none;           /* remove a cercadura azul/cinza do foco */
+  cursor: pointer;
+  user-select: none;
+  line-height: 1;
+  padding: 0;
+}
 
-    /* Responsivo */
-    @media (max-width: 520px) {
-      :root { --logo-base: 140px; }
-      header img { width: calc(var(--logo-base) * 1.8); }
-      .gallery { column-width: 80px; } /* miniaturas menores em mobile */
-      header h1 { font-size: 14px; }
-    }
+.close:hover {
+  color: #ff4444;        /* opcional: fica vermelha no hover */
+}
   </style>
 
   <link rel="icon" type="image/png" href="favicon.png" />
